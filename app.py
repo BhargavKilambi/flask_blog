@@ -13,8 +13,8 @@ class Blogpost(db.Model):
 	title = db.Column(db.String(50))
 	subtitle = db.Column(db.String(50))
 	author = db.Column(db.String(20))
-	content = db.Column(db.String(255))
-	date_created = db.Column(db.Text)
+	content = db.Column(db.Text)
+	date_created = db.Column(db.DateTime)
 
 @app.route('/')
 def index():
